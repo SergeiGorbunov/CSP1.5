@@ -1,21 +1,14 @@
-{
-// const menu = document.querySelector('.mobile-menu');
-// const burgerOpen = document.querySelector('.header__burger');
-// const burgerClose = document.querySelector('.mobile-header__button');
-
-// burgerOpen.addEventListener('click',()=>{
-//     menu.classList.add('mobile-menu--active');
-// });
-// burgerClose.addEventListener('click',()=>{
-//     menu.classList.remove('mobile-menu--active');
-// });
-}
 
 {
   const readMore = document.querySelector('.brands__button');
   const bar = document.querySelector('.brands__swiper');
   readMore.addEventListener('click',()=>{
     bar.classList.toggle('swiper--exposed');
+    if (bar.classList.contains('swiper--exposed')) {
+      readMore.textContent = 'Скрыть';
+    } else {
+      readMore.textContent = 'Показать все';
+    }
   });
 }
 
